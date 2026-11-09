@@ -1,4 +1,3 @@
-
 package org.example.grade.service;
 
 import org.example.grade.entity.Grade;
@@ -72,7 +71,7 @@ public class GradeService {
         return gradeRepository.save(grade);
     }
 
-    private String calculateLetterGrade(Double score) {
+    private String calculateLetterGrade(Integer score) {
         if (score >= 90) return "A";
         if (score >= 75) return "B";
         if (score >= 60) return "C";
