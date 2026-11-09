@@ -1,0 +1,25 @@
+spring.application.name=UniversityManagementSystem
+
+# STUDENT DATABASE
+spring.datasource.student.url=${DB_STUDENT_URL:jdbc:postgresql://localhost:5432/student_db}
+spring.datasource.student.username=${DB_USERNAME:postgres}
+spring.datasource.student.password=${DB_STUDENT_PASSWORD}
+spring.datasource.student.driver-class-name=org.postgresql.Driver
+
+# COURSE DATABASE
+spring.datasource.course.url=${DB_COURSE_URL:jdbc:postgresql://localhost:5432/course_db}
+spring.datasource.course.username=${DB_USERNAME:postgres}
+spring.datasource.course.password=${DB_COURSE_PASSWORD}
+spring.datasource.course.driver-class-name=org.postgresql.Driver
+
+# GRADE DATABASE
+spring.datasource.grade.url=${DB_GRADE_URL:jdbc:postgresql://localhost:5432/grade_db}
+spring.datasource.grade.username=${DB_USERNAME:postgres}
+spring.datasource.grade.password=${DB_GRADE_PASSWORD}
+spring.datasource.grade.driver-class-name=org.postgresql.Driver
+
+# JPA
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+server.port=8089
